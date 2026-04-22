@@ -1,16 +1,163 @@
-# React + Vite
+# 📝 To-Do List Full Stack Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/status-production-brightgreen)
+![Tech](https://img.shields.io/badge/stack-React%20%7C%20Node%20%7C%20Prisma-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Overview
 
-## React Compiler
+This is a **full stack To-Do List application** that allows users to manage tasks with authentication, persistence, and a modern user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It demonstrates a complete workflow:
 
-## Expanding the ESLint configuration
+- Backend API development
+- Database integration
+- Frontend UI/UX
+- Deployment in production
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Live Demo
+
+- **Frontend:** https://todolist-3e9r.onrender.com/
+- **Backend API:** https://user-crud-prisma.onrender.com/api
+
+---
+
+## ✨ Features
+
+- 🔐 User authentication (JWT)
+- 📝 Create, update, delete tasks (CRUD)
+- ✅ Mark tasks as completed
+- 🔎 Filter tasks (All / Pending / Completed)
+- 💾 Persistent UI state (filters saved)
+- ⚡ Smooth animations and microinteractions
+- 🎨 Clean and modern UI
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+
+- React (Vite)
+- JavaScript (ES6+)
+- CSS (custom UI)
+
+### Backend
+
+- Node.js
+- Express.js
+- Prisma ORM
+
+### Database
+
+- PostgreSQL (Render)
+
+### Deployment
+
+- Render (Frontend + Backend)
+
+---
+
+## 📁 Project Structure
+
+```
+frontend/                # React application (Vite)
+  src/
+    components/          # UI components
+    services/            # API communication
+    App.jsx              # Main component
+
+backend/                 # Node.js + Express API
+  src/
+    controllers/         # Request handlers
+    services/            # Business logic
+    routes/              # API endpoints
+    middleware/          # Auth & validation
+  prisma/
+    schema.prisma        # Database schema
+```
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend (.env)
+
+```
+DATABASE_URL=your_database_url
+JWT_SECRET=your_secret
+```
+
+### Frontend (.env)
+
+```
+VITE_API_URL=https://user-crud-prisma.onrender.com/api
+```
+
+---
+
+## 🛠️ Installation (Local Development)
+
+### Backend
+
+```
+cd backend
+npm install
+npx prisma migrate dev
+npm run dev
+```
+
+### Frontend
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🧠 Key Concepts Implemented
+
+- RESTful API design
+- JWT authentication
+- Role-based authorization (USER / ADMIN)
+- Resource ownership validation
+- Prisma migrations
+- React Hooks (useState, useEffect)
+- Separation of concerns (controller/service pattern)
+- Error handling and loading states
+- UI/UX improvements with animations
+
+---
+
+## 📈 Future Improvements
+
+- ✏️ Edit tasks
+- 📅 Deadlines and priorities
+- 🌙 Dark mode
+- 🔄 Refresh tokens
+- 👤 User profile
+- 🧪 Testing (unit & integration)
+
+---
+
+## 👨‍💻 Author
+
+**Yoam Gonzaga**
+
+---
+
+## 📌 Notes
+
+This project was developed as part of a structured learning path toward becoming a **Full Stack Application Developer**. It reflects real-world problem solving, debugging, and deployment experience.
+
+---
+
+## ⭐ If you like this project
+
+Give it a star on GitHub ⭐
